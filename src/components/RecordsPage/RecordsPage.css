@@ -1,0 +1,16 @@
+.records__count {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.records__count select {
+    height: 35px;
+    padding: 2px;
+    outline: none;
+}
+
+.records__count h4 {
+    font-family: Arial;
+    font-weight: 500;
+}

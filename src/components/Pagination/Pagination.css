@@ -1,0 +1,24 @@
+ul {
+    display: flex;
+    gap: 5px;
+    list-style-type: none;
+    user-select: none;
+    margin-bottom: 20px;
+}
+
+ul li {
+    width: 15px;
+    height: 15px;
+    border: 1px solid lightblue;
+    text-align: center;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.arrow_left, .arrow_right {
+    text-align: center;
+}
+
+.active {
+    background: lightblue;
+}
