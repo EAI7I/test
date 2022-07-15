@@ -34,3 +34,8 @@
   border-collapse: collapse;
   border: 1px solid lightgray;
 }
+
+.table img {
+  width: 16px;
+  height: 16px;
+}

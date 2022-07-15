@@ -22,6 +22,8 @@ function App() {
         },
     ];
 
+    const arrows = require("./assets/arrows.png")
+
     // Флаги сделаны для сортировки в обе стороны
     const [guidFlag, setGuidFlag] = useState<boolean>(false);
     const [nameFlag, setNameFlag] = useState<boolean>(false);
@@ -103,11 +105,11 @@ function App() {
                     <tbody>
                     {!notFound && titles.map((title, key: number) => (
                         <tr key={key}>
-                            <th onClick={() => onSort(0)}>{title.guid}</th>
-                            <th onClick={() => onSort(1)}>{title.name}</th>
-                            <th onClick={() => onSort(2)}>{title.phone}</th>
-                            <th onClick={() => onSort(3)}>{title.email}</th>
-                            <th onClick={() => onSort(4)}>{title.address}</th>
+                            <th onClick={() => onSort(0)}>{title.guid} <img src={arrows}/></th>
+                            <th onClick={() => onSort(1)}>{title.name} <img src={arrows}/></th>
+                            <th onClick={() => onSort(2)}>{title.phone} <img src={arrows}/></th>
+                            <th onClick={() => onSort(3)}>{title.email} <img src={arrows}/></th>
+                            <th onClick={() => onSort(4)}>{title.address} <img src={arrows}/></th>
                         </tr>
                     ))}
                     {!notFound && currentTableData.map((row: RowProps, key: number) => (
